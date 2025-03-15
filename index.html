@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark">
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-effect shadow-neon z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="#" class="text-2xl font-bold gradient-text">Ayush Waghade</a>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+          <button id="menu-btn" class="md:hidden text-light">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden fixed w-full glass-effect shadow-neon z-40 top-16"
+    >
+      <div class="flex flex-col space-y-4 px-6 py-4">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 min-h-screen flex items-center bg-darker">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 animate-on-scroll">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-light">
+              Hi, I'm <span class="gradient-text">Ayush Waghade</span>
+            </h1>
+            <p class="text-xl text-light/80 mb-8">
+              A passionate Software Developer crafting innovative digital
+              experiences.
+            </p>
+            <a href="#contact" class="btn-primary">Get in Touch</a>
+          </div>
+          <div class="md:w-1/2 mt-12 md:mt-0 animate-float">
+            <div class="neon-border rounded-2xl">
+              <img
+                src="https://via.placeholder.com/500"
+                alt="Hero Image"
+                class="rounded-2xl transform hover:rotate-3 transition-transform duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-darker">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="animate-on-scroll">
+            <div class="neon-border rounded-2xl">
+              <img
+                src="https://via.placeholder.com/400"
+                alt="About Image"
+                class="rounded-2xl"
+              />
+            </div>
+          </div>
+          <div class="animate-on-scroll">
+            <p class="text-light/80 mb-8 text-lg">
+              I'm a passionate Software Developer with expertise in web
+              development, machine learning, and Java-based applications. I
+              enjoy building scalable and efficient solutions, whether it's
+              crafting dynamic web platforms, developing intelligent ML models,
+              or creating robust Java applications. Always eager to learn and
+              innovate, I strive to bridge technology with real-world
+              applications.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="skill-card">
+                <h3 class="text-xl font-bold mb-3 gradient-text">Frontend</h3>
+                <p class="text-light/80">HTML, CSS, JavaScript, React</p>
+              </div>
+              <div class="skill-card">
+                <h3 class="text-xl font-bold mb-3 gradient-text">Backend</h3>
+                <p class="text-light/80">Node.js, Express, Flask</p>
+              </div>
+              <div class="skill-card">
+                <h3 class="text-xl font-bold mb-3 gradient-text">
+                  Java Developement
+                </h3>
+                <p class="text-light/80">Android Developement, Swing, JDBC</p>
+              </div>
+              <div class="skill-card">
+                <h3 class="text-xl font-bold mb-3 gradient-text">
+                  Machine Learning
+                </h3>
+                <p class="text-light/80">Python, TensorFlow, Scikit-learn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-dark">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title">My Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://via.placeholder.com/400x300"
+              alt="Project 1"
+              class="w-full"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 gradient-text">AgroHelp</h3>
+              <p class="text-light/80 mb-4">
+                A platform designed to connect farmers and wholesalers directly,
+                eliminating middlemen. It features a community-driven
+                post-comment system where farmers share experiences, seek
+                advice, and gain reputation points for expert contributions.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-secondary"
+                  >View Demo</a
+                >
+                <a href="#" class="text-primary hover:text-secondary"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://via.placeholder.com/400x300"
+              alt="Project 2"
+              class="w-full"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 gradient-text">Bio Secura</h3>
+              <p class="text-light/80 mb-4">
+                A neonatal identity verification system that captures the
+                footprint of newborns and the fingerprint of mothers for secure
+                hospital authentication. Uses deep learning and sensor
+                technology to prevent baby mix-ups and kidnappings.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-secondary"
+                  >View Demo</a
+                >
+                <a href="#" class="text-primary hover:text-secondary"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://via.placeholder.com/400x300"
+              alt="Project 3"
+              class="w-full"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 gradient-text">
+                Pharmacy Management System
+              </h3>
+              <p class="text-light/80 mb-4">
+                A Java-based software for managing pharmacy inventory, sales,
+                and customer records. It integrates with an Oracle database and
+                features automated stock alerts, sales tracking, and billing
+                functionalities.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-secondary"
+                  >View Demo</a
+                >
+                <a href="#" class="text-primary hover:text-secondary"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card animate-on-scroll">
+            <img
+              src="https://via.placeholder.com/400x300"
+              alt="Project 3"
+              class="w-full"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 gradient-text">
+                Inventory Management System
+              </h3>
+              <p class="text-light/80 mb-4">
+                A Windows desktop application built using Python and SQLite to
+                help businesses manage inventory efficiently. Features include
+                product tracking, stock level monitoring, automated alerts, and
+                comprehensive reporting.
+              </p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-primary hover:text-secondary"
+                  >View Demo</a
+                >
+                <a href="#" class="text-primary hover:text-secondary"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-darker">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="max-w-lg mx-auto">
+          <form id="contact-form" class="space-y-6 animate-on-scroll">
+            <div>
+              <label for="name" class="block text-light mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-light mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-light mb-2">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="form-input"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker text-light/80 py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
